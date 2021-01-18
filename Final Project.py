@@ -1,6 +1,7 @@
-select_typeof_Calculator= input ("Can you please type of calculator you want to use. The differents of calculators are: Scientific Calculator, Quadratic Calculator, Add 2*2 Matrix, Subtract 2*2 Matrix, Multiply 2*2 Matrix, Divide 2*2 Matrix, Inverse 2*2 Matrix, Discriminant 2*2 Matrix, Product 2*2 Matrix, Add 3*3 Matrix, Subtract 3*3 Matrix, Multiply 3*3 Matrix, Divide 3*3 Matrix, Discriminant 3*3 Matrix, Product 3*3 Matrix?")
+print("1= Scientific Calculator, \n2= Quadratic Calculator, \n3= Add 2*2 Matrix, \n4= Subtract 2*2 Matrix, \n5= Multiply 2*2 Matrix, \n6= Divide 2*2 Matrix, \n7= Inverse 2*2 Matrix, \n8= Discriminant 2*2 Matrix, \n9= Product 2*2 Matrix, \n10= Add 3*3 Matrix, \n11= Subtract 3*3 Matrix, \n12= Multiply 3*3 Matrix, \n13= Divide 3*3 Matrix, \n14= Discriminant 3*3 Matrix")
+select_typeof_Calculator= input ("Type the number that correspondes to the type of calculator you want to use for the problem you want to solve?")
 #================================Scientific Calculator========================================
-if select_typeof_Calculator=="Scientific Calculator":
+if select_typeof_Calculator=="1":
     from tkinter import *
     import math as m
     root= Tk()
@@ -148,7 +149,7 @@ if select_typeof_Calculator=="Scientific Calculator":
     zero.grid(row=7, column=2)
     equal.grid(row=7, column=3)
 #============================================Quadratic Calculator=====================================================================================
-if select_typeof_Calculator=="Quadratic Calculator":
+if select_typeof_Calculator=="2":
     from tkinter import *
     from math import sqrt
 
@@ -211,7 +212,7 @@ if select_typeof_Calculator=="Quadratic Calculator":
     root.mainloop()
 
 #============================================2x2 Inverse Matrix Calculator=========================
-if select_typeof_Calculator=="Inverse 2*2 Matrix":
+if select_typeof_Calculator=="7":
     import numpy as np
     from tkinter import *
     def calculator_Function(a,b,c,d):
@@ -284,7 +285,7 @@ if select_typeof_Calculator=="Inverse 2*2 Matrix":
     output.grid(row=3, columnspan=8)
     root.mainloop()
 #=================================2x2 Multiplying Matrices Calculator=======================-------==========-=-==================-=-==========
-if select_typeof_Calculator=="Multiply 2*2 Matrix":
+if select_typeof_Calculator=="5":
     import numpy as np
     from tkinter import *
     def calculator_Function(a,b,c,d,e,f,g,h):
@@ -397,7 +398,7 @@ if select_typeof_Calculator=="Multiply 2*2 Matrix":
     output.grid(row=3, columnspan=8)
     root.mainloop()
 #================================2x2 Adding Matrices=============================++++++++++========================================
-if select_typeof_Calculator=="Add 2*2 Matrix":
+if select_typeof_Calculator=="3":
     import numpy as np
     from tkinter import *
     def calculator_Function(a,b,c,d,e,f,g,h):
@@ -427,7 +428,7 @@ if select_typeof_Calculator=="Add 2*2 Matrix":
         h_coefficient = float(h.get())
         inserter(calculator_Function(a_coefficient, b_coefficient, c_coefficient, d_coefficient, e_coefficient, f_coefficient, g_coefficient, h_coefficient))
     root = Tk()
-    root.title("2x2-Multiply Matrix Calculator")
+    root.title("2x2-Add Matrix Calculator")
     root.minsize(325,230)
 
 
@@ -510,7 +511,7 @@ if select_typeof_Calculator=="Add 2*2 Matrix":
     output.grid(row=3, columnspan=8)
     root.mainloop()
 #=================================2x2 Product matrix calculator==================+++===========================================
-if select_typeof_Calculator=="Product 2*2 Matrix":
+if select_typeof_Calculator=="9":
     import numpy as np
     from tkinter import *
     def calculator_Function(a,b,c,d,e,f,g,h):
@@ -623,7 +624,7 @@ if select_typeof_Calculator=="Product 2*2 Matrix":
     output.grid(row=3, columnspan=8)
     root.mainloop()
 #=================================2x2 Dividing Matrices======================================================================================
-if select_typeof_Calculator=="Divide 2*2 Matrix":
+if select_typeof_Calculator=="6":
     import numpy as np
     from tkinter import *
     def calculator_Function(a,b,c,d,e,f,g,h):
@@ -738,7 +739,7 @@ if select_typeof_Calculator=="Divide 2*2 Matrix":
 
 
 #=================================2x2 Subtracting Matrices=============================================================================================
-if select_typeof_Calculator=="Subtract 2*2 Matrix":
+if select_typeof_Calculator=="4":
     import numpy as np
     from tkinter import *
     def calculator_Function(a,b,c,d,e,f,g,h):
@@ -768,7 +769,7 @@ if select_typeof_Calculator=="Subtract 2*2 Matrix":
         h_coefficient = float(h.get())
         inserter(calculator_Function(a_coefficient, b_coefficient, c_coefficient, d_coefficient, e_coefficient, f_coefficient, g_coefficient, h_coefficient))
     root = Tk()
-    root.title("2x2-Add Matrix Calculator")
+    root.title("2x2-Subtract Matrix Calculator")
     root.minsize(325,230)
 
 
@@ -852,7 +853,7 @@ if select_typeof_Calculator=="Subtract 2*2 Matrix":
     root.mainloop()
 
 #========================================2x2 Detriminant Calculator======================================================================================
-if select_typeof_Calculator=="Discriminant 2*2 Matrix":
+if select_typeof_Calculator=="8":
     import numpy as np
     from tkinter import *
     def calculator_Function(a,b,c,d):
@@ -925,7 +926,7 @@ if select_typeof_Calculator=="Discriminant 2*2 Matrix":
     output.grid(row=3, columnspan=8)
     root.mainloop()
 #===================================3x3 Multiply Matrix Calculator===================================================================
-if select_typeof_Calculator=="Multiply 3*3 Matrix":
+if select_typeof_Calculator=="12":
     import numpy as np
     from tkinter import *
     def calculator_Function(a,b,c,d,e,f,g,h,i,j,k,l,m,n,o,p,q,r):
@@ -1111,7 +1112,7 @@ if select_typeof_Calculator=="Multiply 3*3 Matrix":
     output.grid(row=4, columnspan=14)
     root.mainloop()
 #=================================3x3 Add Matrix Calculator=======================
-if select_typeof_Calculator=="Add 3*3 Matrix":
+if select_typeof_Calculator=="10":
     import numpy as np
     from tkinter import *
     def calculator_Function(a,b,c,d,e,f,g,h,i,j,k,l,m,n,o,p,q,r):
@@ -1299,7 +1300,7 @@ if select_typeof_Calculator=="Add 3*3 Matrix":
 
 
 #==================================3x3 Subtract Matrix Calculator===================
-if select_typeof_Calculator=="Subtract 3*3 Matrix":
+if select_typeof_Calculator=="11":
     import numpy as np
     from tkinter import *
     def calculator_Function(a,b,c,d,e,f,g,h,i,j,k,l,m,n,o,p,q,r):
@@ -1485,7 +1486,7 @@ if select_typeof_Calculator=="Subtract 3*3 Matrix":
     output.grid(row=4, columnspan=14)
     root.mainloop()
 #==============================3x3 Discriminant Matrix Calculator==================
-if select_typeof_Calculator=="Discriminant 3*3 Matrix":
+if select_typeof_Calculator=="8":
     import numpy as np
     from tkinter import *
     def calculator_Function(a,b,c,d,e,f,g,h,i):
@@ -1598,195 +1599,9 @@ if select_typeof_Calculator=="Discriminant 3*3 Matrix":
     Solve_button.grid(row=1, column=15, padx=(0,0))
     output.grid(row=4, columnspan=14)
     root.mainloop()
-#===================================3x3 Product matrices calculator========================================================
-if select_typeof_Calculator=="Product 3*3 Matrix":
-    import numpy as np
-    from tkinter import *
-    def calculator_Function(a,b,c,d,e,f,g,h,i,j,k,l,m,n,o,p,q,r):
-        x = np.array([[a, b, c],
-                      [d, e, f],
-                      [g, h, i]])
-        y= np.array([[j, k, l],
-                     [m, n, o],
-                     [p, q, r]])
-        text= np.product(x,y)
-        return text
 
-    def inserter(value):#inserting specified value in widget
-        output.delete("0.0","end")
-        output.insert("0.0",value)
-        
-    def clear(event):# Clear the entry form
-        caller = event.widget
-        caller.delete("0", "end")
-
-    def variable_input_function():#Get the inputted values and plug them into the calculator function to be solved and then displayed in the output section
-        a_coefficient = float(a.get())
-        b_coefficient = float(b.get())
-        c_coefficient = float(c.get())
-        d_coefficient = float(d.get())
-        e_coefficient = float(e.get())
-        f_coefficient = float(f.get())
-
-        g_coefficient = float(g.get())
-        h_coefficient = float(h.get())
-        i_coefficient = float(i.get())
-        j_coefficient = float(j.get())
-        k_coefficient = float(k.get())
-        l_coefficient = float(l.get())
-        m_coefficient = float(m.get())
-        n_coefficient = float(n.get())
-        o_coefficient = float(o.get())
-        p_coefficient = float(p.get())
-        q_coefficient = float(q.get())
-        r_coefficient = float(r.get())
-        inserter(calculator_Function(a_coefficient, b_coefficient, c_coefficient, d_coefficient, e_coefficient, f_coefficient, g_coefficient, h_coefficient, i_coefficient, j_coefficient, k_coefficient, l_coefficient, m_coefficient, n_coefficient, o_coefficient, p_coefficient, q_coefficient, r_coefficient))
-    root = Tk()
-    root.title("3x3-product Matrix Calculator")
-    root.minsize(325,230)
-
-
-    frame = Frame(root)
-    frame.grid()
-    # Creating entries
-    a = Entry(frame, width=3)
-    a.bind("<FocusIn>", clear)
-    b = Entry(frame, width=3)
-    b.bind("<FocusIn>", clear)
-    c = Entry(frame, width=3)
-    c.bind("<FocusIn>", clear)
-    d = Entry(frame, width=3)
-    d.bind("<FocusIn>", clear)
-    e = Entry(frame, width=3)
-    e.bind("<FocusIn>", clear)
-    f = Entry(frame, width=3)
-    f.bind("<FocusIn>", clear)
-    g = Entry(frame, width=3)
-    g.bind("<FocusIn>", clear)
-    h = Entry(frame, width=3)
-    h.bind("<FocusIn>", clear)
-    i = Entry(frame, width=3)
-    i.bind("<FocusIn>", clear)
-    j = Entry(frame, width=3)
-    j.bind("<FocusIn>", clear)
-    k = Entry(frame, width=3)
-    k.bind("<FocusIn>", clear)
-    l = Entry(frame, width=3)
-    l.bind("<FocusIn>", clear)
-    m = Entry(frame, width=3)
-    m.bind("<FocusIn>", clear)
-    n = Entry(frame, width=3)
-    n.bind("<FocusIn>", clear)
-    o = Entry(frame, width=3)
-    o.bind("<FocusIn>", clear)
-    p = Entry(frame, width=3)
-    p.bind("<FocusIn>", clear)
-    q = Entry(frame, width=3)
-    q.bind("<FocusIn>", clear)
-    r = Entry(frame, width=3)
-    r.bind("<FocusIn>", clear)
-    #Creating labels and buttons
-    opening_parenthesis = Label(frame, text="[")
-    opening_parenthesis.config(font=("Courier", 20))
-    opening_parenthesis2 = Label(frame, text="[")
-    opening_parenthesis2.config(font=("Courier", 20))
-    opening_parenthesis3 = Label(frame, text="[")
-    opening_parenthesis3.config(font=("Courier", 20))
-    opening_parenthesis4 = Label(frame, text="[")
-    opening_parenthesis4.config(font=("Courier", 20))
-    opening_parenthesis5 = Label(frame, text="[")
-    opening_parenthesis5.config(font=("Courier", 20))
-    opening_parenthesis6 = Label(frame, text="[")
-    opening_parenthesis6.config(font=("Courier", 20))
-    closing_parenthesis = Label(frame, text="]")
-    closing_parenthesis.config(font=("Courier", 20))
-    closing_parenthesis2 = Label(frame, text="]")
-    closing_parenthesis2.config(font=("Courier", 20))
-    closing_parenthesis3 = Label(frame, text="]")
-    closing_parenthesis3.config(font=("Courier", 20))
-    closing_parenthesis4 = Label(frame, text="]")
-    closing_parenthesis4.config(font=("Courier", 20))
-    closing_parenthesis5 = Label(frame, text="]")
-    closing_parenthesis5.config(font=("Courier", 20))
-    closing_parenthesis6 = Label(frame, text="]")
-    closing_parenthesis6.config(font=("Courier", 20))
-    comma = Label(frame, text=",")
-    comma.config(font=("Courier", 20))
-    comma2 = Label(frame, text=",")
-    comma2.config(font=("Courier", 20))
-    comma3 = Label(frame, text=",")
-    comma3.config(font=("Courier", 20))
-    comma4 = Label(frame, text=",")
-    comma4.config(font=("Courier", 20))
-    comma5 = Label(frame, text=",")
-    comma5.config(font=("Courier", 20))
-    comma6 = Label(frame, text=",")
-    comma6.config(font=("Courier", 20))
-    comma7 = Label(frame, text=",")
-    comma7.config(font=("Courier", 20))
-    comma8 = Label(frame, text=",")
-    comma8.config(font=("Courier", 20))
-    comma9 = Label(frame, text=",")
-    comma9.config(font=("Courier", 20))
-    comma10 = Label(frame, text=",")
-    comma10.config(font=("Courier", 20))
-    comma11 = Label(frame, text=",")
-    comma11.config(font=("Courier", 20))
-    comma12 = Label(frame, text=",")
-    comma12.config(font=("Courier", 20))
-    Solve_button = Button(frame, text="Solve", width=7, height=2, command=variable_input_function)#Solve button
-    output = Text(frame, bg="light grey", font="Arial 12", width=30, height=10)#background color, size and etc.
-    product_symbol= Label(frame, text=".")
-    product_symbol.config(font=("Courier", 20))
-    #Location of everything
-    opening_parenthesis.grid(row=1,column=0)
-    a.grid(row=1, column=1)
-    comma.grid(row=1,column=2)
-    b.grid(row=1,column=3)
-    comma2.grid(row=1,column=4)
-    c.grid(row=1,column=5)
-    closing_parenthesis.grid(row=1,column=6)
-    product_symbol.grid(row=1, column=7)
-    opening_parenthesis2.grid(row=1,column=8)
-    j.grid(row=1, column=9)
-    comma3.grid(row=1,column=10)
-    k.grid(row=1,column=11)
-    comma4.grid(row=1,column=12)
-    l.grid(row=1,column=13)
-    closing_parenthesis2.grid(row=1,column=14)
-    opening_parenthesis3.grid(row=2,column=0)
-    d.grid(row=2, column=1)
-    comma5.grid(row=2,column=2)
-    e.grid(row=2,column=3)
-    comma6.grid(row=2,column=4)
-    f.grid(row=2,column=5)
-    closing_parenthesis3.grid(row=2,column=6)
-    opening_parenthesis4.grid(row=2,column=8)
-    m.grid(row=2, column=9)
-    comma7.grid(row=2,column=10)
-    n.grid(row=2,column=11)
-    comma8.grid(row=2,column=12)
-    o.grid(row=2,column=13)
-    closing_parenthesis4.grid(row=2,column=14)
-    opening_parenthesis5.grid(row=3,column=0)
-    g.grid(row=3, column=1)
-    comma9.grid(row=3,column=2)
-    h.grid(row=3,column=3)
-    comma10.grid(row=3,column=4)
-    i.grid(row=3,column=5)
-    closing_parenthesis5.grid(row=3,column=6)
-    opening_parenthesis6.grid(row=3,column=8)
-    p.grid(row=3, column=9)
-    comma11.grid(row=3,column=10)
-    q.grid(row=3,column=11)
-    comma12.grid(row=3,column=12)
-    r.grid(row=3,column=13)
-    closing_parenthesis6.grid(row=3,column=14)
-    Solve_button.grid(row=1, column=15, padx=(0,0))
-    output.grid(row=4, columnspan=14)
-    root.mainloop()
 #*****************************************************3x3 Division Matrix Calculator ********************************************************************
-if select_typeof_Calculator=="Divide 3*3 Matrix":
+if select_typeof_Calculator=="13":
     import numpy as np
     from tkinter import *
     def calculator_Function(a,b,c,d,e,f,g,h,i,j,k,l,m,n,o,p,q,r):
@@ -1972,5 +1787,3 @@ if select_typeof_Calculator=="Divide 3*3 Matrix":
     Solve_button.grid(row=1, column=15, padx=(0,0))
     output.grid(row=4, columnspan=14)
     root.mainloop()
-
-
